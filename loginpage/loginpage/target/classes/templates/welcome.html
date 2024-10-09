@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Welcome</title>
+    <style>
+        body {
+            background-image: url(' https://images.unsplash.com/photo-1542744173-8e7e53415bb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080');
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white; /* Change text color for visibility */
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome, <span th:text="${username}"></span>!</h1>
+    <a href="/login" style="color: white;">Logout</a>
+</body>
+</html>
